@@ -12,31 +12,14 @@ function Form() {
     const regExNoTelp = /^08\d{0,12}$/;
 
     const form = useRef();
-
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-
-    //     emailjs.sendForm('service_0rnh78y', 'template_nwgk51l', form.current, 'MSXzhQVtnxLpM_YNL')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-
-    //     e.target.reset()
-    // };
     
     const handleForm=(e)=>{
         e.preventDefault();
         if(nama.length<3 || regExEmail.test(email) || regExNoTelp.test(phone)){
             setError(true);      
         }
-        emailjs.sendForm('service_0rnh78y', 'template_zhy50ym', form.current, 'pWiHc6HFzKklkYKTw')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        emailjs.sendForm('service_0rnh78y', 'template_zhy50ym', form.current, 'pWiHc6HFzKklkYKTw');
+        
         e.target.reset()
     }
 
