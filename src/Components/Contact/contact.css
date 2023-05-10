@@ -1,0 +1,14 @@
+#contact{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    border: .3rem solid black;
+    margin: 2rem auto;
+    padding-bottom: 3rem ;
+    border-radius: 10rem;
+}
+
+#h2telp{
+    margin-top: -2.5rem;
+    
+}

@@ -1,0 +1,63 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 7px solid black;
+    background-image: linear-gradient(to left, var(--color-darkPurple) , var(--color-blue));
+    height: auto;
+    padding: 2rem;
+}
+
+.header {
+    color: #f1f1f1;
+    padding: 10px;
+}
+
+.card {
+    width: 60%;
+    margin-top: 20px;
+    box-shadow: 0 4x 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px, 0 rgba(19, 9, 9, 0.2);
+    padding: 30px 140px;
+    background-image: linear-gradient(to left, var(--color-primary-variant) , var(--color-blue));
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.message {
+    text-align: center;
+    font-size: 13px;
+    color: red;
+    margin: 0;
+}
+
+.label {
+    font-size: 20px;
+    color: var(--color-white);
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: var(--color-white);
+}
+
+.select{
+    width: 20%;
+    padding: .35rem;
+    background:transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.option{
+    color: var(--color-darkPurple);
+    background-color: var(--color-white);
+}
